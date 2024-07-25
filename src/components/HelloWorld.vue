@@ -9,7 +9,7 @@
         height="150"
         src="@/assets/logo.png"
       />
-
+    <div v-bind="objectOfAttrs">saasd</div>
       <div class="text-center">
         <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
 
@@ -154,4 +154,9 @@
 
 <script setup lang="ts">
   //
+  const objectOfAttrs = {
+  id: 'container',
+  class: 'test',
+  style: 'background-color:green'
+}
 </script>
